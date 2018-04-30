@@ -2,3 +2,21 @@
   <h1>Welcome to DevConnect</h1>
   <h3>Where entrepreneurs &amp; developers connect!</h3>
 </div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="well memberships text-center">
+        <h2>Basic Membership</h2>
+        <h4>Sign up for free &amp; enjoy basic access to the community</h4>
+        <br>
+        <%= link_to  "Sign Up For Free", new_user_registration_path, class: 'btn btn-primary btn-block btn-lg' %>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="well memberships text-center">
+        <h2>Pro Membership</h2>
+        <h4>Sign up for a pro membership &amp; get unrestricted access to contacts in the community. </h4>
+        <%= link_to  "Sign Up & Get Unrestricted Access", new_user_registration_path, class: 'btn btn-success btn-block btn-lg' %>
+    </div>
+  </div>
+</div>
