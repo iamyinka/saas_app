@@ -28,7 +28,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 group :production do
-  gem 'pg', '0.11'
+  gem 'pg', '0.15.0'
   gem 'rails_12factor'
 end
 
