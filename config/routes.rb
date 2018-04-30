@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get '/contact_us' => 'contacts#new'
   resources :contacts, only: [:new, :create]
   get '/about' => 'pages#about'
