@@ -32,6 +32,7 @@
   <div class="form-group">
     <%= label_tag :card_month, "Credit Expiration" %>
     <%= select_month nil, {add_month_numbers: true}, {name: nil, id: 'card_month'} %>
+    <!-- <%= select_month(Date.today, add_month_numbers: true) %> -->
     <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+20}, {name: nil, id: 'card_year'} %>
   </div>
 
