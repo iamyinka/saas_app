@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
   get '/contact_us' => 'contacts#new'
   resources :contacts, only: [:new, :create]
   get '/about' => 'pages#about'
